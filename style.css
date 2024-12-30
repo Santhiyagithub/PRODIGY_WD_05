@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('images/image1.jpg'); /* Initial background image */
+    background-size: cover;  /* Makes the image cover the entire screen */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed;  /* Keeps the image fixed during scrolling */
+    height: 100vh;  /* Ensures the background covers the full viewport height */
+    transition: background-image 1s ease-in-out;  /* Smooth transition between images */
+}
+
+/* Container */
+.container {
+    width: 60%;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #abd1de;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Input Section */
+#cityInput {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Weather Info Section */
+.weather-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Weather Icon */
+.weather-info img {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+/* Forecast Titles */
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Cards for Each Weather Forecast */
+.weather-info div {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Hourly Forecast */
+#hourlyForecast div, #tenDayForecast div, #weekendForecast div, #monthlyForecast div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+#hourlyForecast div img,
+#tenDayForecast div img,
+#weekendForecast div img,
+#monthlyForecast div img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Alerts & Lifestyle Updates */
+#alerts, #lifestyleUpdates {
+    font-size: 1.1rem;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#alerts h2, #lifestyleUpdates h2 {
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #cityInput {
+        width: 80%;
+    }
+    
+    button {
+        width: 80%;
+        margin-top: 10px;
+    }
+    
+    .weather-info {
+        padding: 15px;
+    }
+}
+
+#currentDateTime {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
